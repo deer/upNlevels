@@ -2,7 +2,7 @@
   "name": "@deer/upNlevels",
   "version": "0.0.1",
   "exports": "./mod.ts",
-  "lock": "false",
+  "lock": false,
   "tasks": {
     "check:types": "deno check **/*.ts",
     "coverage": "rm -rf coverage && deno task test --coverage && deno coverage --html",
