@@ -1,14 +1,24 @@
 # upNlevels
 
-upNlevels is a utility to make it easier to do things like this:
+`upNlevels` is a utility to simplify navigating up directory levels in a URL or
+file path.
+
+Instead of manually constructing path strings like this:
 
 ```ts
-normalize(import.meta.url + "../../../../../../").href;
+// Using string concatenation
+normalize(import.meta.url + "../../../").href;
+
+// Or using the `new URL()` constructor for relative paths
+new URL("../../", import.meta.url).href;
 ```
 
-Instead of having to manually type out an awkward expression of file paths,
-simply specify how high you want to go:
+You can use `upNlevels` to navigate up directory levels more intuitively:
 
 ```ts
-upNlevels(import.meta.url, 5).href;
+// Move up 2 levels with upNlevels
+upNlevels(import.meta.url, 2).href;
 ```
+
+This makes your code cleaner and easier to understand, especially when dealing
+with complex path manipulations.

@@ -1,6 +1,6 @@
 {
-  "name": "@deer/upNlevels",
-  "version": "0.0.1",
+  "name": "@deer/upnlevels",
+  "version": "0.0.2",
   "exports": "./mod.ts",
   "lock": false,
   "tasks": {
